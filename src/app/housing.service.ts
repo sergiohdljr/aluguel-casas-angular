@@ -135,5 +135,9 @@ export class HousingService {
     );
   }
 
+  submitApplication(firstName: string, lastName: string, email: string) {
+    alert(`Homes application recived: ${firstName} ${lastName} ${email} `);
+  }
+
   constructor() {}
 }
