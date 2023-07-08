@@ -4,7 +4,6 @@ import { Housinglocation } from './housinglocation';
 @Injectable({
   providedIn: 'root',
 })
-
 export class HousingService {
   housingLocationList: Housinglocation[] = [
     {
@@ -131,9 +130,9 @@ export class HousingService {
   }
 
   getHousingLocationById(id: number): Housinglocation | undefined {
-    return this.housingLocationList.find((housingLocation) => {
-      housingLocation.id === id;
-    });
+    return this.housingLocationList.find(
+      (housingLocation) => housingLocation.id === id
+    );
   }
 
   constructor() {}
