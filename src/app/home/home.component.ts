@@ -52,9 +52,11 @@ export class HomeComponent {
   }
 
   constructor() {
-    this.housingLocationList = this.housingService.getAllHousingLocations();
-
-    this.housingLocationList = this.housingService.getAllHousingLocations();
-    this.filteredLocationList = this.housingLocationList;
+    this.housingService
+      .getAllHousingLocations()
+      .then((houseLocationList: Housinglocation[]) => {
+        this.housingLocationList = houseLocationList;
+        this.filteredLocationList = houseLocationList;
+      });
   }
 }
