@@ -1,4 +1,4 @@
-# Tutorial de Aplicativo Angular
+# App Angular
 
 Aplicativo Angular simples desenvolvido como parte do tutorial para iniciantes na sua documentação. O objetivo deste projeto é fornecer uma introdução prática ao desenvolvimento de aplicativos web utilizando o framework Angular.
 
